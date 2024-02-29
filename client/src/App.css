@@ -3,3 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-conatiner{
+  display: flex;
+}
+
+.sidebar-container{
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(116, 100, 83);
+}
+
+.logo-container{
+  text-align: center;
+
+}
+
+.logo{
+ 
+  margin-top: 1rem;
+  
+}
+
+
+.page-container{
+  width: 100vw;
+}
+
+.navbar-container{
+display: flex;
+  height: 7%;
+  background-color: rgb(166, 153, 136);
+}
+
+.ul-container{
+ width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ul{
+  list-style-type: none; 
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.li-items{
+  color: blue;
+ 
+}
+
+.body-container{
+  background-color: rgb(135, 135, 130);
+  
+  height: 93%;
+}
