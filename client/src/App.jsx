@@ -1,6 +1,8 @@
 
 import './App.css'
 import {  } from '@heroicons/react/24/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
@@ -18,9 +20,10 @@ function App() {
       <div className='page-container'>
         <div className='navbar-container'>
           <div>
-            <span>
-             
+            <span className='icon-span'>
+        
 
+            <FontAwesomeIcon className='iconHB' icon="fa-solid fa-bars" />
 
             </span>
           </div>

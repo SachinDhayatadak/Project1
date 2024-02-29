@@ -20,11 +20,26 @@
 }
 
 .logo{
- 
+
+}
+
+.iconenv{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(9, 64, 64);
   margin-top: 1rem;
+}
+
+.icon-span{
   
 }
 
+.iconHB{
+height: 50px;
+width: 50px;
+background-color: aqua;
+margin-top: 1rem;
+}
 
 .page-container{
   width: 100vw;
