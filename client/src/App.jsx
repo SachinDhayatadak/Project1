@@ -1,31 +1,39 @@
-
-import './App.css'
-import {  } from '@heroicons/react/24/solid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const sidebarLayoutOpen = {  width: "4%" };
+
+  const sidebarLayoutClose = { width: "20%" };
+
+  const handleSidebarChange = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
 
   return (
     <div className='main-conatiner'>
-      <div className='sidebar-container'>
+      <div className='sidebar-container' style={sidebarOpen ? sidebarLayoutOpen : sidebarLayoutClose}>
         <div className='logo-container'>
-        <h1 className='logo'>coconut</h1>
-        </div>
-        <div>
 
+        { sidebarOpen ?
+          
+          <img className='logoCo' src="/coconut.png" alt="logo" />
+
+          :
+
+          <h1 className='logo'>coconut</h1>
+
+        }
+          
         </div>
-        
+        <div></div>
       </div>
       <div className='page-container'>
         <div className='navbar-container'>
-          <div>
-            <span className='icon-span'>
-        
-
-            <FontAwesomeIcon className='iconHB' icon="fa-solid fa-bars" />
-
-            </span>
+          <div className='hb-container'>
+            <img onClick={handleSidebarChange} className='imgHB' src="/hamburger.png" alt="img" />
           </div>
           <div className='ul-container'>
             <ul className='ul'>
@@ -37,12 +45,10 @@ function App() {
             </ul>
           </div>
         </div>
-        <div className='body-container'>
-          body
-        </div>
+        <div className='body-container'>body</div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
