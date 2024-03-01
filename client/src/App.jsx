@@ -4,9 +4,9 @@ import { useState } from 'react';
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const sidebarLayoutOpen = {  width: "4%" };
+  const sidebarLayoutOpen = {  width: "20%" };
 
-  const sidebarLayoutClose = { width: "20%" };
+  const sidebarLayoutClose = { width: "4%" };
 
   const handleSidebarChange = () => {
     setSidebarOpen(!sidebarOpen);
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='main-conatiner'>
-      <div className='sidebar-container' style={sidebarOpen ? sidebarLayoutOpen : sidebarLayoutClose}>
+      <div className='sidebar-container' style={sidebarOpen ? sidebarLayoutClose  : sidebarLayoutOpen}>
         <div className='logo-container'>
 
         { sidebarOpen ?

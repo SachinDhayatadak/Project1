@@ -11,6 +11,7 @@
 .sidebar-container {
   height: 100vh;
   background-color: rgb(109, 7, 63);
+  transition: all ease-in-out 0.5s;
 }
 
 .logo-container {
